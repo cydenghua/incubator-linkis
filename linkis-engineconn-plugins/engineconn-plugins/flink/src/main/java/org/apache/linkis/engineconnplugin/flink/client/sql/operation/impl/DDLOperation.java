@@ -80,6 +80,9 @@ public class DDLOperation implements NonJobOperation {
             case ALTER_DATABASE:
                 actionMsg = "alter a database";
                 break;
+            case CREATE_FUNCTION:
+                actionMsg = "create a function";
+                break;
             default:
                 actionMsg = null;
         }

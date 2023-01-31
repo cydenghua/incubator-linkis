@@ -43,6 +43,7 @@ public class OperationFactoryImpl implements OperationFactory {
                         new DropViewOperation(
                                 context, call.operands[0], Boolean.parseBoolean(call.operands[1]));
                 break;
+            case CREATE_FUNCTION:
             case CREATE_TABLE:
             case DROP_TABLE:
             case ALTER_TABLE:

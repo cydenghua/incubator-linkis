@@ -62,6 +62,8 @@ public enum SqlCommand {
 
     SHOW_FUNCTIONS,
 
+    CREATE_FUNCTION,
+
     EXPLAIN,
 
     DESCRIBE_TABLE,

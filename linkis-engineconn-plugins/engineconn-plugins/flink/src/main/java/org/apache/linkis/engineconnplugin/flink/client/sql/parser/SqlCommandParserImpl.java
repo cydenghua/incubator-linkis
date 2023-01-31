@@ -165,6 +165,9 @@ public class SqlCommandParserImpl implements SqlCommandParser {
         } else if (node instanceof SqlShowFunctions) {
             cmd = SqlCommand.SHOW_FUNCTIONS;
             operands = new String[0];
+        } else if (node instanceof SqlCreateFunction) {
+            cmd = SqlCommand.CREATE_FUNCTION;
+            operands = new String[] {stmt};
         } else if (node instanceof SqlUseCatalog) {
             cmd = SqlCommand.USE_CATALOG;
             operands = new String[] {((SqlUseCatalog) node).getCatalogName().getSimple()};
